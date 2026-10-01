@@ -1,0 +1,24 @@
+{
+  "name": "post-work-economics",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The Ownership Dividend — a concept site for post-work economics.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "node --experimental-strip-types --test tests/*.test.ts"
+  },
+  "dependencies": {
+    "@fontsource/instrument-serif": "^5.2.8",
+    "@fontsource/outfit": "^5.2.8"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^6.3.5"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
