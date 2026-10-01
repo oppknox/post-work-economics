@@ -1,5 +1,6 @@
 node_modules
 dist
+.playwright-mcp
 .wrangler
 .DS_Store
 *.local

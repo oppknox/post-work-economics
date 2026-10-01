@@ -1,8 +1,8 @@
 import { REFERENCE, compute, statusCopy, type Inputs } from "./model";
 import { formatCount, formatMoney, formatMonthly, formatMultiple, formatPct } from "./format";
 
-const ROBOT_MIN = 1_000_000;
-const ROBOT_MAX = 400_000_000;
+const ROBOT_MIN_MILLIONS = 1;
+const ROBOT_MAX_MILLIONS = 600;
 
 interface Controls {
   robots: HTMLInputElement;
@@ -15,12 +15,12 @@ interface Controls {
 
 export function mountCalculator(): void {
   const controls: Controls = {
-    robots: required("#robots"),
-    ubi: required("#ubi"),
-    tax: required("#tax"),
-    own: required("#own"),
-    yield: required("#yield"),
-    defl: required("#defl"),
+    robots: required("input#robots"),
+    ubi: required("input#ubi"),
+    tax: required("input#tax"),
+    own: required("input#own"),
+    yield: required("input#yield"),
+    defl: required("input#defl"),
   };
 
   const fromUrl = readUrl();
@@ -153,13 +153,12 @@ function paintRanges(controls: Controls): void {
 }
 
 function robotsFromSlider(position: number): number {
-  const t = position / 10000;
-  return ROBOT_MIN * Math.pow(ROBOT_MAX / ROBOT_MIN, t);
+  return position * 1_000_000;
 }
 
 function sliderFromRobots(robots: number): number {
-  const clamped = Math.min(ROBOT_MAX, Math.max(ROBOT_MIN, robots));
-  return Math.round(10000 * (Math.log(clamped / ROBOT_MIN) / Math.log(ROBOT_MAX / ROBOT_MIN)));
+  const millions = Math.round(robots / 1_000_000);
+  return Math.min(ROBOT_MAX_MILLIONS, Math.max(ROBOT_MIN_MILLIONS, millions));
 }
 
 function presetInputs(name: string | undefined): Inputs {

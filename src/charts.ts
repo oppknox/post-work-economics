@@ -5,6 +5,7 @@ import {
   compute,
   cumulativeFleet,
   fleetPath,
+  yearForCumulative,
 } from "./model";
 import { formatCount, formatMoney, formatPct, formatYear } from "./format";
 
@@ -83,17 +84,24 @@ export function mountFleet(host: HTMLElement, readout: HTMLElement): void {
   el("path", { d: usLine, fill: "none", stroke: "#f4efe6", "stroke-width": "1.6", "stroke-dasharray": "5 6", class: "chart-line" }, svg);
   el("path", { d: annLine, fill: "none", stroke: "#9dceba", "stroke-width": "2.2", class: "chart-line" }, svg);
 
+  const billionYear = yearForCumulative(1_000_000_000);
   const marks = [
-    { year: 5, label: "10M / year" },
-    { year: 6.9, label: "10M in the US" },
-    { year: 13.3, label: "1B global" },
+    { year: 5, label: "Year 5 · 10M built", y: pad.t + 46 },
+    { year: 6.9, label: "Year 6.9 · 10M in the US", y: pad.t + 78 },
+    { year: billionYear, label: "1 billion global", y: yCum(1_000_000_000) - 18 },
   ];
   for (const mark of marks) {
     const c = cumulativeFleet(mark.year);
-    el("circle", { cx: x(mark.year), cy: yCum(c), r: 4.5, fill: "#0e0f0c", stroke: "#f2d2a2", "stroke-width": "1.6" }, svg);
+    const px = x(mark.year);
+    const py = yCum(c);
+    el("line", {
+      x1: px, x2: px, y1: py, y2: mark.y + 6,
+      stroke: "#f2d2a2", "stroke-opacity": "0.45", "stroke-dasharray": "2 3",
+    }, svg);
+    el("circle", { cx: px, cy: py, r: 4.5, fill: "#0e0f0c", stroke: "#f2d2a2", "stroke-width": "1.6" }, svg);
     text(mark.label, {
-      x: x(mark.year) + (mark.year > 10 ? -8 : 8),
-      y: yCum(c) - 12,
+      x: px + (mark.year > 10 ? -8 : 8),
+      y: mark.y,
       fill: "#f4efe6",
       "font-size": "12",
       "text-anchor": mark.year > 10 ? "end" : "start",
@@ -132,7 +140,7 @@ export function mountFleet(host: HTMLElement, readout: HTMLElement): void {
     event.preventDefault();
     show(current + (event.key === "ArrowRight" ? 0.2 : -0.2));
   });
-  show(13.3);
+  show(billionYear);
 
   requestAnimationFrame(() => {
     svg.querySelectorAll<SVGPathElement>(".chart-line").forEach((path) => {
@@ -147,13 +155,13 @@ export function mountCurves(host: HTMLElement, readout: HTMLElement): void {
   const pad = { l: 58, r: 24, t: 24, b: 40 };
   const innerW = width - pad.l - pad.r;
   const innerH = height - pad.t - pad.b;
-  const maxRobots = 400e6;
-  const maxCov = 1.4;
+  const maxRobots = 600e6;
+  const maxCov = 2;
   const x = (robots: number) => pad.l + (robots / maxRobots) * innerW;
   const y = (cov: number) => pad.t + innerH - (Math.min(cov, maxCov) / maxCov) * innerH;
 
   const samples: Array<{ robots: number; tax: number; mix: number; full: number }> = [];
-  for (let robots = 0; robots <= maxRobots; robots += 5e6) {
+  for (let robots = 0; robots <= maxRobots; robots += 8e6) {
     const tax = compute({ ...REFERENCE, usRobots: robots, ownershipShare: 0, taxRate: 0.2 });
     const mix = compute({ ...REFERENCE, usRobots: robots });
     const full = compute({ ...REFERENCE, usRobots: robots, ownershipShare: 1, taxRate: 0 });
@@ -174,12 +182,12 @@ export function mountCurves(host: HTMLElement, readout: HTMLElement): void {
   });
   host.appendChild(svg);
 
-  for (const tick of [0, 0.5, 1, 1.4]) {
+  for (const tick of [0, 0.5, 1, 1.5, 2]) {
     const yy = y(tick);
     el("line", { x1: pad.l, x2: width - pad.r, y1: yy, y2: yy, stroke: "#f3ecdf", "stroke-opacity": tick === 1 ? "0.35" : "0.08" }, svg);
     text(`${Math.round(tick * 100)}%`, { x: pad.l - 8, y: yy + 4, "text-anchor": "end", fill: "#aaa492", "font-size": "12" }, svg);
   }
-  for (const robots of [0, 100e6, 200e6, 312e6, 400e6]) {
+  for (const robots of [0, 200e6, 312e6, 520e6, 600e6]) {
     text(robots === 0 ? "0" : `${Math.round(robots / 1e6)}M`, {
       x: x(robots), y: height - 14, "text-anchor": "middle", fill: "#aaa492", "font-size": "12",
     }, svg);
