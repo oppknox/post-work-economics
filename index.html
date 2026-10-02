@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="theme-color" content="#0e0f0c" />
+    <meta
+      name="description"
+      content="The Ownership Dividend: a citizen stake in robot labor, sized to a $3,000–$5,000 monthly stipend. A concept site by Sean Knox."
+    />
+    <title>The Ownership Dividend</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <style>
+      html { background: #0e0f0c; color: #f4efe6; }
+    </style>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div id="progress" aria-hidden="true"><span></span></div>
+    <header class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        The Ownership Dividend
+      </a>
+      <nav aria-label="Sections">
+        <a href="#premise">Premise</a>
+        <a href="#math">Math</a>
+        <a href="#ownership">Ownership</a>
+        <a href="#tax-shift">Tax</a>
+        <a href="#transition">Transition</a>
+        <a href="#trap">The trap</a>
+        <a href="#calculator">Calculator</a>
+      </nav>
+    </header>
+    <nav class="rail" aria-label="On this page">
+      <a href="#premise"><span>01</span> Premise</a>
+      <a href="#math"><span>02</span> Math</a>
+      <a href="#ownership"><span>03</span> Ownership</a>
+      <a href="#tax-shift"><span>04</span> Tax</a>
+      <a href="#transition"><span>05</span> Bridge</a>
+      <a href="#trap"><span>06</span> Trap</a>
+      <a href="#calculator"><span>07</span> Calculator</a>
+    </nav>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Post-Work Economics</p>
+            <h1>The Ownership Dividend</h1>
+            <hr class="rule" />
+            <p class="lede">
+              Self-driving fleets, humanoid labor, and cheap intelligence are arriving on an industrial timetable.
+              A stipend of <strong>$3,000 to $5,000 a month</strong> for every American adult costs on the order of
+              <strong>$9 to $16 trillion a year</strong>. A tax on robot profits covers a slice. The rest has to be owned.
+            </p>
+            <div class="actions">
+              <a class="btn" href="#calculator">Open the calculator</a>
+              <a class="btn btn-ghost" href="#math">See the fiscal math</a>
+            </div>
+            <dl class="hero-stats">
+              <div>
+                <dt data-count="0.59" data-decimals="2" data-suffix="×">0.59×</dt>
+                <dd>Robot labor versus the US labor force, at the reference fleet</dd>
+              </div>
+              <div>
+                <dt data-count="6" data-prefix="$" data-suffix="T">$6T</dt>
+                <dd>Owner profit per year from 200 million US robots</dd>
+              </div>
+              <div>
+                <dt data-count="8.2" data-decimals="1" data-prefix="$" data-suffix="T">$8.2T</dt>
+                <dd>Still unfunded after a 20% tax on that profit</dd>
+              </div>
+            </dl>
+          </div>
+          <figure>
+            <svg class="plate" viewBox="0 0 560 700" role="img" aria-labelledby="plateTitle plateDesc">
+              <title id="plateTitle">Figure I. The claim</title>
+              <desc id="plateDesc">
+                Land stays put at the bottom. Robots stand on it. A citizen fund collects a claim on the machines and pays it out to people.
+              </desc>
+              <rect x="16" y="16" width="528" height="668" stroke="#f3ecdf" stroke-opacity="0.35" />
+              <path d="M16 36 H36 M16 16 V36 M544 16 V36 M524 16 H544 M16 664 V684 M16 684 H36 M544 664 V684 M524 684 H544" stroke="#e0a45a" stroke-width="1.4" />
+              <text x="36" y="48" fill="#aaa492" font-size="12" letter-spacing="2.5" font-family="Outfit, sans-serif">FIG. I — THE CLAIM</text>
+
+              <g fill="none" stroke="#f3ecdf" stroke-width="1.25">
+                <circle class="spin-slow" cx="280" cy="300" r="168" stroke-dasharray="2 8" stroke-opacity="0.45" />
+                <circle cx="280" cy="300" r="92" stroke="#e0a45a" stroke-width="1.4" />
+                <circle cx="280" cy="300" r="64" stroke="#f2d2a2" stroke-opacity="0.8" />
+                <path d="M280 246 L318 300 L280 354 L242 300 Z" stroke="#f4efe6" />
+              </g>
+              <text x="280" y="296" text-anchor="middle" fill="#f4efe6" font-size="15" letter-spacing="3" font-family="Outfit, sans-serif">FUND</text>
+              <text x="280" y="318" text-anchor="middle" fill="#f2d2a2" font-size="16" font-family="Instrument Serif, serif" font-style="italic">one share each</text>
+
+              <g fill="#f4efe6" stroke="none">
+                <circle cx="447" cy="271" r="5" />
+                <circle cx="427" cy="215" r="5" />
+                <circle cx="389" cy="170" r="5" />
+                <circle cx="338" cy="140" r="5" />
+                <circle cx="280" cy="132" r="5.5" />
+                <circle cx="222" cy="140" r="5" />
+                <circle cx="171" cy="170" r="5" />
+                <circle cx="133" cy="215" r="5" />
+                <circle cx="113" cy="271" r="5" />
+              </g>
+              <g fill="none" stroke="#f2d2a2" stroke-opacity="0.55" class="dash">
+                <path d="M280 236 L280 140" />
+                <path d="M326 248 L389 176" />
+                <path d="M234 248 L171 176" />
+                <path d="M352 274 L447 271" />
+                <path d="M208 274 L113 271" />
+              </g>
+
+              <g stroke="#e0a45a" fill="none" stroke-width="1.3">
+                <path d="M70 470 H490" />
+                <path class="dash" d="M280 392 V470" stroke="#f2d2a2" />
+                <g transform="translate(70 478)">
+                  <circle cy="10" r="7" />
+                  <path d="M-10 20 h20 v26 h-20 z" />
+                  <path d="M-10 28 h-9 M10 28 h9 M-4 46 v14 M4 46 v14" />
+                </g>
+                <g transform="translate(154 478)">
+                  <circle cy="10" r="7" />
+                  <path d="M-10 20 h20 v26 h-20 z" />
+                  <path d="M-10 28 h-9 M10 28 h9 M-4 46 v14 M4 46 v14" />
+                </g>
+                <g transform="translate(238 478)">
+                  <circle cy="10" r="7" />
+                  <path d="M-10 20 h20 v26 h-20 z" />
+                  <path d="M-10 28 h-9 M10 28 h9 M-4 46 v14 M4 46 v14" />
+                </g>
+                <g transform="translate(322 478)">
+                  <circle cy="10" r="7" />
+                  <path d="M-10 20 h20 v26 h-20 z" />
+                  <path d="M-10 28 h-9 M10 28 h9 M-4 46 v14 M4 46 v14" />
+                </g>
+                <g transform="translate(406 478)">
+                  <circle cy="10" r="7" />
+                  <path d="M-10 20 h20 v26 h-20 z" />
+                  <path d="M-10 28 h-9 M10 28 h9 M-4 46 v14 M4 46 v14" />
+                </g>
+                <g transform="translate(490 478)">
+                  <circle cy="10" r="7" />
+                  <path d="M-10 20 h20 v26 h-20 z" />
+                  <path d="M-10 28 h-9 M10 28 h9 M-4 46 v14 M4 46 v14" />
+                </g>
+              </g>
+              <circle r="3.2" fill="#e0a45a">
+                <animateMotion dur="3.4s" repeatCount="indefinite" path="M280 500 V400" />
+              </circle>
+              <circle r="2.6" fill="#f4efe6">
+                <animateMotion dur="3s" begin="0.8s" repeatCount="indefinite" path="M280 300 V140" />
+              </circle>
+
+              <g stroke="#a9c0c4" fill="none" stroke-opacity="0.7">
+                <rect x="48" y="600" width="74" height="32" />
+                <rect x="122" y="600" width="74" height="32" />
+                <rect x="196" y="600" width="74" height="32" />
+                <rect x="270" y="600" width="74" height="32" />
+                <rect x="344" y="600" width="74" height="32" />
+                <rect x="418" y="600" width="74" height="32" />
+              </g>
+              <text x="48" y="656" fill="#aaa492" font-size="12" letter-spacing="2" font-family="Outfit, sans-serif">LAND UNDER THE FLEET — IT DOES NOT AUTOMATE</text>
+            </svg>
+            <figcaption class="figcap">Firms run the machines. The fund holds the claim. Citizens receive the dividend. The land stays scarce.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sec" id="premise">
+        <div class="sec-index" aria-hidden="true">01</div>
+        <div class="wrap reveal">
+          <p class="kicker">01 — Premise</p>
+          <h2>The labor arrives <em>on a schedule.</em></h2>
+          <div class="grid-2">
+            <div class="prose">
+              <p>
+                This near future is a stack of industrial facts. Taken together, they make a wage a weaker way to organize income.
+                Communities still need care, craft, and company. Work becomes semi-optional: available, respected, and no longer the only way to eat.
+              </p>
+              <p>
+                General-purpose robots are discussed at an Elon-scale ramp: on the order of <strong>1 million a year now</strong>,
+                <strong>10 million a year within five years</strong>, and a path toward <strong>a billion machines</strong>.
+                The curve below is that ramp drawn as a smooth exponential. It is a planning path, not a forecast.
+              </p>
+            </div>
+            <aside class="callout">
+              <b>2 → 1</b>
+              <span>Two robots count as one worker-equivalent. Ten million robots are five million equivalents — about 3% of a 170 million labor force. Easy to shrug off. The end state is not.</span>
+            </aside>
+          </div>
+
+          <div class="grid-4" style="margin-top: 1.2rem">
+            <article class="card">
+              <span class="idx">01</span>
+              <h3>Autonomy</h3>
+              <p>Self-driving vehicles become ordinary infrastructure. A large category of human labor stops being a job and becomes a setting.</p>
+            </article>
+            <article class="card">
+              <span class="idx">02</span>
+              <h3>Intelligence</h3>
+              <p>Software that can do cognitive piecework sits inside every firm. Attention at a keyboard stops being the scarce input.</p>
+            </article>
+            <article class="card">
+              <span class="idx">03</span>
+              <h3>Community</h3>
+              <p>The social target is thriving places, with work still on offer. Income has to survive a week in which someone does not clock in.</p>
+            </article>
+            <article class="card">
+              <span class="idx">04</span>
+              <h3>Humanoids</h3>
+              <p>A general-purpose body, produced like a car. The fiscal question starts when the installed base, not the press release, gets large.</p>
+            </article>
+          </div>
+
+          <figure class="figure">
+            <h3>Fleet path</h3>
+            <div id="fleet-chart" class="chart-scroll"></div>
+            <p id="fleet-readout" class="readout" aria-live="polite">
+              Year 13.3 on this path: about 1 billion robots worldwide, 200 million of them in the United States.
+            </p>
+            <ul class="legend">
+              <li><i class="swatch own" style="background:#e0a45a"></i> Global installed fleet</li>
+              <li><i class="swatch" style="background:#f4efe6"></i> US share, 20%</li>
+              <li><i class="swatch full" style="background:#9dceba"></i> Robots built that year</li>
+            </ul>
+            <div class="table-wrap">
+              <table>
+                <caption class="figcap" style="caption-side: bottom; text-align: left">
+                  Milestones on the same curve. “Built that year” is a flow. “Fleet” is the stock. They are different numbers, and the early snapshots are small on purpose.
+                </caption>
+                <thead>
+                  <tr>
+                    <th>Moment</th>
+                    <th>Year</th>
+                    <th>Built that year</th>
+                    <th>Global fleet</th>
+                    <th>US fleet</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Ramp starts</td>
+                    <td>0</td>
+                    <td>1 million</td>
+                    <td>Path begins empty</td>
+                    <td>—</td>
+                  </tr>
+                  <tr>
+                    <td>Five-year rate</td>
+                    <td>5</td>
+                    <td>10 million</td>
+                    <td>19.5 million</td>
+                    <td>3.9 million</td>
+                  </tr>
+                  <tr>
+                    <td>Early fiscal snapshot</td>
+                    <td>6.9</td>
+                    <td>24 million</td>
+                    <td>50 million</td>
+                    <td>10 million · ~3% of labor</td>
+                  </tr>
+                  <tr>
+                    <td>Billion-machine path</td>
+                    <td>13.3</td>
+                    <td>462 million</td>
+                    <td>1 billion</td>
+                    <td>200 million · 0.59× labor</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </figure>
+
+          <div class="pair">
+            <article class="panel">
+              <h3>A 10 million US fleet</h3>
+              <p>Three cells in a hundred. About 3% of the labor force. Five million worker-equivalents.</p>
+              <div id="cells-early" class="cells" data-on="3" role="img" aria-label="3 of 100 cells filled, about 3 percent of the labor force"></div>
+            </article>
+            <article class="panel">
+              <h3>The reference fleet</h3>
+              <p>Fifty-nine cells. A billion robots worldwide, a fifth of them here: 100 million worker-equivalents, 0.59× human labor.</p>
+              <div id="cells-ref" class="cells" data-on="59" role="img" aria-label="59 of 100 cells filled, about 0.59 times the labor force"></div>
+            </article>
+          </div>
+          <p class="figcap">Each cell is 1% of a 170 million labor force. Filled cells are robot worker-equivalents. Hover a cell.</p>
+        </div>
+      </section>
+
+      <section class="sec band" id="math">
+        <div class="sec-index" aria-hidden="true">02</div>
+        <div class="wrap reveal">
+          <p class="kicker">02 — The fiscal math</p>
+          <h2>A stipend this large will not fit <em>inside a tax.</em></h2>
+          <p class="lede">These are Sean Knox’s planning figures. The page does not soften them. The calculator uses the same identities, live.</p>
+
+          <div class="table-wrap">
+            <table class="lock">
+              <caption class="figcap" style="caption-side: bottom; text-align: left">Locked reference case. Rounded headlines sit next to the exact products.</caption>
+              <thead>
+                <tr><th>Identity</th><th>Figure</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>US labor force</td><td>170 million</td></tr>
+                <tr><td>Labor income today</td><td>$17.4 trillion / year</td></tr>
+                <tr><td>Adults receiving the stipend</td><td>260 million</td></tr>
+                <tr><td>Robots per worker-equivalent</td><td>2</td></tr>
+                <tr><td>Reference US fleet</td><td>200 million · 1 billion global × 20%</td></tr>
+                <tr><td>Worker-equivalents</td><td>100 million · 0.59× the labor force</td></tr>
+                <tr><td>Robot value added</td><td>$10.24 trillion · about $10 trillion</td></tr>
+                <tr><td>Robot profit</td><td>$6 trillion · $30,000 per robot</td></tr>
+                <tr><td>$3,000 / month stipend</td><td>$9.36 trillion / year · about $9.4 trillion</td></tr>
+                <tr><td>$5,000 / month stipend</td><td>$15.6 trillion / year</td></tr>
+                <tr><td>20% tax on robot profit</td><td>$1.2 trillion · 12.8% of the $3,000 stipend</td></tr>
+                <tr><td>Gap after that tax</td><td>$8.16 trillion / year</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <figure class="figure">
+            <h3>Fiscal waterfall</h3>
+            <p class="figcap" style="margin-top: 0">One scale, trillions of dollars a year. Labor income is the human baseline. Robot value added sits on top of it. Profit is the part owners can claim. The tax is a slice of profit. The stipend is a separate bill.</p>
+            <ol class="waterfall">
+              <li class="wf">
+                <span class="wf-label">Labor income</span>
+                <span class="wf-track"><span class="wf-bar" data-tone="labor" style="--v: 17.4"></span></span>
+                <span class="wf-value">$17.4T</span>
+                <p>What 170 million workers earn now. The human baseline the robots are valued against.</p>
+              </li>
+              <li class="wf">
+                <span class="wf-label">Robot value added</span>
+                <span class="wf-track"><span class="wf-bar" data-tone="va" style="--v: 10.24"></span></span>
+                <span class="wf-value">$10.24T</span>
+                <p>100 million worker-equivalents priced at today’s labor income per worker. Sean’s round number is $10 trillion. It stacks on top of human labor income.</p>
+              </li>
+              <li class="wf">
+                <span class="wf-label">Robot profit</span>
+                <span class="wf-track"><span class="wf-bar" data-tone="profit" style="--v: 6"></span></span>
+                <span class="wf-value">$6T</span>
+                <p>The claimable stream. In this model it is exactly $30,000 per US robot per year.</p>
+              </li>
+              <li class="wf">
+                <span class="wf-label">20% profit tax</span>
+                <span class="wf-track"><span class="wf-bar" data-tone="tax" style="--v: 1.2"></span></span>
+                <span class="wf-value">$1.2T</span>
+                <p>A fifth of the profit. About $385 a month if spread across 260 million adults. Real money. A small slice of the stipend.</p>
+              </li>
+              <li class="wf">
+                <span class="wf-label">$3,000 stipend</span>
+                <span class="wf-track"><span class="wf-bar" data-tone="ubi" style="--v: 9.36"></span></span>
+                <span class="wf-value">$9.36T</span>
+                <p>$3,000 × 12 × 260 million adults. The $5,000 version is $15.6 trillion. The design target is this range, not $1,000 a month.</p>
+              </li>
+              <li class="wf">
+                <span class="wf-label">Gap after the tax</span>
+                <span class="wf-track"><span class="wf-bar" data-tone="gap" style="--v: 8.16"></span></span>
+                <span class="wf-value">$8.16T</span>
+                <p>The ownership problem. A 10% tax leaves a wider gap. Neither rate carries the stipend.</p>
+              </li>
+            </ol>
+          </figure>
+
+          <ul class="formula">
+            <li><span>200 million robots × $30,000</span><em>$6 trillion profit</em></li>
+            <li><span>20% × $6 trillion</span><em>$1.2 trillion tax</em></li>
+            <li><span>$3,000 × 12 × 260 million</span><em>$9.36 trillion stipend</em></li>
+            <li><span>$9.36T − $1.2T</span><em>$8.16 trillion gap</em></li>
+          </ul>
+
+          <figure class="figure">
+            <h3>Coverage as the fleet grows</h3>
+            <div id="curve-chart" class="chart-scroll"></div>
+            <p id="curve-readout" class="readout" aria-live="polite">
+              At 200 million US robots, a 20% profits tax covers 12.8% of a $3,000 stipend.
+            </p>
+            <ul class="legend">
+              <li><i class="swatch tax"></i> Tax only, 20% of profit</li>
+              <li><i class="swatch" style="background:#e0a45a"></i> Reference mix, 50% ownership + 20% tax</li>
+              <li><i class="swatch own"></i> Full citizen claim, no profits tax</li>
+            </ul>
+            <p class="figcap">
+              The mint line crosses the stipend at <strong>312 million US robots</strong> — the point where $30,000 of profit per robot, owned entirely by citizens, equals $3,000 a month.
+              Drag or use the arrow keys. The reference mix never reaches the stipend inside this chart, because 70% of a fleet’s profit is still less than the bill until the fleet is enormous.
+            </p>
+          </figure>
+
+          <details>
+            <summary>Method, in one paragraph</summary>
+            <p>
+              Worker-equivalents equal robots divided by two. Value added equals those equivalents times $17.4 trillion over 170 million workers.
+              Profit is scaled so the 200 million robot case is exactly $6 trillion, which is $30,000 a robot, and that rate is applied to every other fleet size.
+              The stipend is the monthly amount times 12 times 260 million adults. A fund’s size is the citizen dividend divided by the yield.
+              Ten to twenty percent of reference profit is $0.6 to $1.2 trillion, or roughly 6 to 13 percent of the $3,000 stipend. The conclusion in the brief stands: taxation of this stream cannot fund it.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="sec" id="ownership">
+        <div class="sec-index" aria-hidden="true">03</div>
+        <div class="wrap reveal">
+          <p class="kicker">03 — The ownership model</p>
+          <h2>Citizens hold the claim. <em>Firms run the machines.</em></h2>
+          <div class="prose">
+            <p>
+              Every citizen receives a share of robot and AI productive capacity through a sovereign wealth fund that accumulates stakes as the machines deploy.
+              The fund is a shareholder. It is not a factory and it is not a regulator. As fleets grow, the public claim grows with them.
+              The contribution is a stake in new capital, assigned by law at deployment.
+            </p>
+            <p>
+              Norway is the existence proof. The Government Pension Fund Global, on the order of <strong>$2 trillion</strong>, shows that a democracy can hold a vast diversified portfolio and pay the return without operating the companies.
+              Scale that idea about thirty times and you are holding a <strong>$60 trillion</strong> fund. At a 5% dividend it pays <strong>$3 trillion a year</strong>.
+            </p>
+            <p>
+              Read that dividend against the stipend. Three trillion dollars across 260 million adults is about <strong>$960 a month</strong>.
+              That is a serious income. It is the yield of the $60 trillion sketch, and it is not yet $3,000. A 5% fund that pays the full $3,000 needs about <strong>$187 trillion</strong>.
+              The $5,000 stipend needs about <strong>$312 trillion</strong>. The $60 trillion fund is the right kind of object at the first industrial scale. It is the instrument. It is not the last dollar of a $3,000 check.
+            </p>
+            <p>
+              What closes the rest is a larger claim, a larger fleet, and a lower price level. Owning the entire reference profit stream — all $6 trillion — pays about <strong>$1,923 a month</strong>.
+              The $3,000 nominal stipend, funded only from that profit, arrives when the US fleet passes 312 million robots and the citizen claim is the whole claim.
+            </p>
+          </div>
+
+          <figure class="figure">
+            <h3>Where $6 trillion of profit goes</h3>
+            <div class="flow">
+              <div class="flow-source">
+                <strong>$6T</strong>
+                <span>Reference robot profit, one year</span>
+              </div>
+              <div class="streams">
+                <div class="stream own" style="--w: 50" title="Half the profit, paid as a citizen dividend">
+                  <i></i>
+                  <b>Citizen dividend · 50%</b>
+                  <em>$3.00T · about $962 a month · a $60T fund at 5%</em>
+                </div>
+                <div class="stream tax" style="--w: 20" title="A 20 percent tax on the whole profit stream">
+                  <i></i>
+                  <b>Profit tax · 20%</b>
+                  <em>$1.20T · about $385 a month</em>
+                </div>
+                <div class="stream private" style="--w: 30" title="What remains with operating owners">
+                  <i></i>
+                  <b>Operating owners · 30%</b>
+                  <em>$1.80T stays with the firms that build and run the fleets</em>
+                </div>
+              </div>
+            </div>
+            <div class="stacks">
+              <div class="stack-row">
+                <span class="label">If the stake is never assigned</span>
+                <div class="stack" title="Private owners keep the entire profit">
+                  <span class="private full">Private owners 100%</span>
+                </div>
+              </div>
+              <div class="stack-row">
+                <span class="label">Reference assignment — claims on the same $6T</span>
+                <div class="stack">
+                  <span class="own">Citizens 50%</span>
+                  <span class="tax">Tax 20%</span>
+                  <span class="private">Operators 30%</span>
+                </div>
+              </div>
+            </div>
+            <p class="figcap">Together the citizen dividend and the tax cover about 45% of a $3,000 stipend and about $1,346 a month. The hatch in the calculator is the rest.</p>
+          </figure>
+
+          <figure class="figure">
+            <h3>Norway, scaled</h3>
+            <div class="norway">
+              <aside class="inset">
+                <p>Magnified scale, $0–4T. Norway is real, and on a chart that includes the stipend it is a sliver.</p>
+                <div class="inset-track"><div class="inset-bar"></div></div>
+                <p style="margin-top: 0.55rem">≈ $2T existence proof · 5% yield ≈ $32 a month if spread over 260 million adults</p>
+              </aside>
+              <ol class="towers">
+                <li class="tower" style="--v: 60" title="$60 trillion fund, about $960 a month">
+                  <b>$60T</b>
+                  <div class="tower-bar"></div>
+                  <p>The sketch. ~30× Norway. ~$960 / month.</p>
+                </li>
+                <li class="tower" style="--v: 187.2" title="$187 trillion fund pays $3,000 a month at 5 percent">
+                  <b>$187T</b>
+                  <div class="tower-bar"></div>
+                  <p>Fund that pays $3,000 at a 5% yield.</p>
+                </li>
+                <li class="tower" style="--v: 312" title="$312 trillion fund pays $5,000 a month at 5 percent">
+                  <b>$312T</b>
+                  <div class="tower-bar"></div>
+                  <p>Fund that pays $5,000 at a 5% yield.</p>
+                </li>
+              </ol>
+            </div>
+            <p class="figcap">
+              Bar height is the fund, on one linear scale. Dividends assume a 5% payout and 260 million adults.
+              A bigger yield shrinks the fund required. It does not create profit the robots did not earn. The calculator capitalizes whatever dividend you assign.
+            </p>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sec band" id="tax-shift">
+        <div class="sec-index" aria-hidden="true">04</div>
+        <div class="wrap reveal">
+          <p class="kicker">04 — The tax shift</p>
+          <h2>Tax what remains <em>scarce.</em></h2>
+          <div class="prose">
+            <p>
+              Income tax leans on a base this future thins out. If work is optional, a tax on wages is a tax on a shrinking habit.
+              Keep a thin residual if the politics demand one. Move the weight onto bases that survive automation.
+            </p>
+          </div>
+          <div class="grid-3 bases" style="margin-top: 1.2rem">
+            <article class="card">
+              <svg class="icon-row" viewBox="0 0 42 42" aria-hidden="true">
+                <circle cx="21" cy="21" r="12" fill="none" stroke="#e0a45a" stroke-width="1.4" />
+                <circle cx="21" cy="21" r="3" fill="#f2d2a2" />
+              </svg>
+              <h3>Robot ownership</h3>
+              <p>The claim itself. Equity in autonomous capital, including a stabilizer on the citizen fund’s returns if a future Congress needs one.</p>
+            </article>
+            <article class="card">
+              <svg class="icon-row" viewBox="0 0 42 42" aria-hidden="true">
+                <path d="M8 30 L16 18 L24 24 L34 10" fill="none" stroke="#9dceba" stroke-width="1.6" />
+                <path d="M28 10 H34 V16" fill="none" stroke="#9dceba" stroke-width="1.6" />
+              </svg>
+              <h3>Capital gains</h3>
+              <p>The new wage bill accrues to owners. In this model that bill is $30,000 a robot a year. Tax the gain where the profit actually lands.</p>
+            </article>
+            <article class="card">
+              <svg class="icon-row" viewBox="0 0 42 42" aria-hidden="true">
+                <rect x="6" y="14" width="14" height="14" fill="none" stroke="#a9c0c4" />
+                <rect x="20" y="14" width="14" height="14" fill="none" stroke="#a9c0c4" />
+                <rect x="13" y="28" width="14" height="8" fill="none" stroke="#a9c0c4" />
+              </svg>
+              <h3>Land value</h3>
+              <p>Land cannot be automated away. A humanoid does not mint parcels. Taxing land value takes a scarcity rent without punishing the decision to deploy a machine.</p>
+            </article>
+          </div>
+
+          <figure class="figure">
+            <h3>Watch the price level</h3>
+            <div class="deflate">
+              <article>
+                <h3>Today’s nominal base</h3>
+                <div class="mini-bars">
+                  <div style="height: 70%"><span>Real output</span></div>
+                  <div class="alt" style="height: 70%"><span>Nominal receipts</span></div>
+                </div>
+                <p>Tax assessments and wages share one price level. The treasury’s spreadsheet matches the grocery bill.</p>
+              </article>
+              <article>
+                <h3>Costs down, output up</h3>
+                <div class="mini-bars">
+                  <div style="height: 100%"><span>Real output doubles</span></div>
+                  <div class="alt" style="height: 38%"><span>Nominal receipts shrink</span></div>
+                </div>
+                <p>If robots cut production costs 50–80%, sticker prices fall while real output rises. A tax pinned to nominal wages collects less in the middle of an abundance. Tax real output and wealth. Judge the stipend by what it buys.</p>
+              </article>
+            </div>
+            <p class="figcap">Illustrative, not a forecast. The severe end of Sean’s range is the picture: real life gets larger, the nominal tax base gets smaller. The calculator’s purchasing-power lens lets you price a nominal dividend in today’s goods.</p>
+          </figure>
+        </div>
+      </section>
+
+      <section class="sec" id="transition">
+        <div class="sec-index" aria-hidden="true">05</div>
+        <div class="wrap reveal">
+          <p class="kicker">05 — Transition</p>
+          <h2>Insure the decade, <em>not the century.</em></h2>
+          <div class="prose">
+            <p>
+              The dangerous period is the ramp. A ten-million-robot US fleet is a few percent of the labor force. A two-hundred-million-robot fleet is a different country.
+              Between them, wages in automatable work can fall before the dividend has fully vested.
+            </p>
+          </div>
+          <ol class="timeline">
+            <li>
+              <span class="when">Now</span>
+              <div>
+                <h3>Write the claim</h3>
+                <p>Assign the stake in law while the fleet is still small. The rule should be boring and automatic: capacity comes online, the citizen share is issued.</p>
+              </div>
+            </li>
+            <li>
+              <span class="when">Years 1–5</span>
+              <div>
+                <h3>Turn a dividend on early</h3>
+                <p>Annual production reaches about 10 million robots. The installed US fleet is still modest. Households should already see a deposit, even a small one, so the path is visible.</p>
+              </div>
+            </li>
+            <li>
+              <span class="when">The ramp</span>
+              <div>
+                <h3>Wage insurance, and retraining that is not a toll</h3>
+                <p>Replace part of the loss for workers leaving automatable jobs. Sunset the insurance when the published dividend hits a floor. Offer specific retraining. The course is a tool. The stake is citizenship, and the course is not the price of admission.</p>
+              </div>
+            </li>
+            <li>
+              <span class="when">Year ~13 on this path</span>
+              <div>
+                <h3>A second labor force</h3>
+                <p>About a billion machines worldwide, 200 million in the US, roughly 0.6× human labor. By then the fund is either vested or the profit has a different owner.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="sec band" id="trap">
+        <div class="sec-index" aria-hidden="true">06</div>
+        <div class="wrap reveal">
+          <p class="kicker">06 — The anti-pattern</p>
+          <h2>The state should not <em>own the robots.</em></h2>
+          <p class="lede">There is a version of this future in which a ministry buys the humanoids, rosters them, and rents them out. It answers the ownership question by creating a worse one.</p>
+          <div class="diptych">
+            <article class="bad">
+              <span class="tag">Anti-pattern</span>
+              <h3>Regulator owning the regulated</h3>
+              <svg viewBox="0 0 360 180" aria-hidden="true" style="width: 100%; height: auto; margin: 0.6rem 0">
+                <rect x="70" y="24" width="220" height="120" rx="10" fill="none" stroke="#e7a394" />
+                <text x="180" y="48" text-anchor="middle" fill="#f4efe6" font-size="13" font-family="Outfit, sans-serif">MINISTRY OF ROBOTS</text>
+                <g stroke="#e7a394" fill="none">
+                  <circle cx="130" cy="92" r="8" />
+                  <path d="M118 104 h24 v16 h-24 z" />
+                  <circle cx="180" cy="92" r="8" />
+                  <path d="M168 104 h24 v16 h-24 z" />
+                  <circle cx="230" cy="92" r="8" />
+                  <path d="M218 104 h24 v16 h-24 z" />
+                </g>
+                <path d="M300 80 H340" stroke="#e7a394" />
+                <text x="322" y="74" text-anchor="middle" fill="#e7a394" font-size="11" font-family="Outfit, sans-serif">permit?</text>
+                <text x="180" y="162" text-anchor="middle" fill="#aaa492" font-size="12" font-family="Outfit, sans-serif">The incumbent is the referee</text>
+              </svg>
+              <p>Every private builder is a petitioner. Antitrust has nothing coherent to say, because the monopoly is the government. The next generation of the machine becomes a budget line.</p>
+            </article>
+            <article class="good">
+              <span class="tag">The structure</span>
+              <h3>A shareholder, not an operator</h3>
+              <svg viewBox="0 0 360 180" aria-hidden="true" style="width: 100%; height: auto; margin: 0.6rem 0">
+                <g fill="none" stroke="#9dceba">
+                  <rect x="16" y="70" width="70" height="48" rx="6" />
+                  <rect x="104" y="70" width="70" height="48" rx="6" />
+                  <rect x="192" y="70" width="70" height="48" rx="6" />
+                </g>
+                <text x="51" y="98" text-anchor="middle" fill="#f4efe6" font-size="12" font-family="Outfit, sans-serif">Firm</text>
+                <text x="139" y="98" text-anchor="middle" fill="#f4efe6" font-size="12" font-family="Outfit, sans-serif">Firm</text>
+                <text x="227" y="98" text-anchor="middle" fill="#f4efe6" font-size="12" font-family="Outfit, sans-serif">Firm</text>
+                <circle cx="300" cy="46" r="22" fill="none" stroke="#e0a45a" />
+                <text x="300" y="50" text-anchor="middle" fill="#f2d2a2" font-size="11" font-family="Outfit, sans-serif">Fund</text>
+                <path d="M278 58 L250 70 M278 58 L174 70 M278 58 L86 70" stroke="#e0a45a" fill="none" />
+                <path d="M40 150 h12 M70 150 h12 M100 150 h12 M150 150 h12 M200 150 h12 M250 150 h12" stroke="#f4efe6" />
+                <text x="40" y="170" fill="#aaa492" font-size="12" font-family="Outfit, sans-serif">Citizens hold shares · a separate regulator stays outside</text>
+              </svg>
+              <p>Companies build, deploy, and fail in public. The fund accumulates a prescribed stake as capacity comes online — equity, a royalty on deployed units, or a claim on the profit of autonomous capital. Citizens can see the share. Managers run the robots.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec" id="calculator">
+        <div class="sec-index" aria-hidden="true">07</div>
+        <div class="wrap">
+          <div class="reveal">
+            <p class="kicker">07 — Calculator</p>
+            <h2>Move the fleet. <em>Watch the gap.</em></h2>
+            <p class="lede">
+              Seeded to the reference case: 200 million US robots, a $3,000 stipend, a 20% profits tax, a 50% citizen share, and a 5% yield.
+              That share is a $60 trillion fund. Nothing here is a forecast. It is the identity behind the essay.
+            </p>
+          </div>
+          <div class="calc-layout" style="margin-top: 1.2rem">
+            <form class="controls panel" id="calc-form">
+              <div class="presets" role="group" aria-label="Scenarios">
+                <button type="button" data-preset="reference" aria-pressed="false">Reference case</button>
+                <button type="button" data-preset="stipend5" aria-pressed="false">$5,000 stipend</button>
+                <button type="button" data-preset="early" aria-pressed="false">10 million fleet</button>
+                <button type="button" data-preset="taxonly" aria-pressed="false">Tax only</button>
+                <button type="button" data-preset="full" aria-pressed="false">Full citizen claim</button>
+              </div>
+
+              <label class="slider">
+                <span class="slider-top"><span>US robot fleet</span><output id="robots-out" for="robots">200 million</output></span>
+                <input id="robots" name="robots" type="range" min="1" max="600" step="1" value="200" aria-label="US robot fleet" />
+                <span class="slider-scale"><span>1 million</span><span>600 million</span></span>
+              </label>
+              <label class="slider">
+                <span class="slider-top"><span>Stipend</span><output id="ubi-out" for="ubi">$3,000 / month</output></span>
+                <input id="ubi" name="ubi" type="range" min="1000" max="6000" step="100" value="3000" aria-label="Monthly stipend" />
+                <span class="slider-scale"><span>$1,000</span><span>$3–5k target</span><span>$6,000</span></span>
+              </label>
+              <label class="slider">
+                <span class="slider-top"><span>Tax on robot profits</span><output id="tax-out" for="tax">20%</output></span>
+                <input id="tax" name="tax" type="range" min="0" max="40" step="1" value="20" aria-label="Tax rate on robot profits" />
+                <span class="slider-scale"><span>0%</span><span>10–20% band</span><span>40%</span></span>
+              </label>
+              <label class="slider">
+                <span class="slider-top"><span>Citizen ownership share</span><output id="own-out" for="own">50%</output></span>
+                <input id="own" name="own" type="range" min="0" max="100" step="1" value="50" aria-label="Citizen ownership share of robot profit" />
+                <span class="slider-scale"><span>0%</span><span>50% · $60T at the reference fleet</span><span>100%</span></span>
+              </label>
+              <label class="slider">
+                <span class="slider-top"><span>Dividend yield</span><output id="yield-out" for="yield">5%</output></span>
+                <input id="yield" name="yield" type="range" min="2" max="8" step="0.5" value="5" aria-label="Dividend yield used to size the fund" />
+                <span class="slider-scale"><span>2%</span><span>Sizes the fund. It does not create profit.</span><span>8%</span></span>
+              </label>
+            </form>
+
+            <div class="result-card" aria-live="polite">
+              <p class="kicker" style="margin-bottom: 0.4rem">Usable coverage of the stipend</p>
+              <p class="coverage" id="coverage">44.9%</p>
+              <div class="substats">
+                <span>Gap <b id="gap-out">$5.16T</b></span>
+                <span>Per adult <b id="monthly-out">$1,346</b>/mo</span>
+                <span>Stipend bill <b id="m-cost">$9.36T</b></span>
+              </div>
+              <div class="vessel-row">
+                <div class="vessel" id="vessel" aria-hidden="true">
+                  <span class="own" id="vessel-own" style="height: 32%"></span>
+                  <span class="tax" id="vessel-tax" style="height: 13%"></span>
+                </div>
+                <ul class="legend" style="flex-direction: column; margin: 0">
+                  <li><i class="swatch own"></i> Citizen dividend</li>
+                  <li><i class="swatch tax"></i> Profit tax</li>
+                  <li><i class="swatch gap"></i> Unfunded gap</li>
+                </ul>
+              </div>
+              <div id="split" aria-hidden="true">
+                <span id="split-own" class="own" style="width: 50%; background: var(--mint)"></span>
+                <span id="split-tax" class="tax" style="width: 20%; background: var(--coral)"></span>
+                <span id="split-rest" style="width: 30%; background: #6f7366"></span>
+              </div>
+              <p class="figcap" style="margin-top: 0">Profit split: mint citizens, coral tax, gray left with operating owners.</p>
+              <dl class="metrics">
+                <div><dt>Worker-equivalents</dt><dd id="m-we">100 million · 0.59×</dd></div>
+                <div><dt>Value added</dt><dd id="m-va">$10.24T</dd></div>
+                <div><dt>Robot profit</dt><dd id="m-profit">$6T</dd></div>
+                <div><dt>Tax raised</dt><dd id="m-tax">$1.2T · $385/mo</dd></div>
+                <div><dt>Citizen dividend</dt><dd id="m-div">$3T · $962/mo</dd></div>
+                <div><dt>Implied fund</dt><dd id="m-fund">$60T</dd></div>
+                <div><dt>Fund for the full stipend</dt><dd id="m-need">$187.2T</dd></div>
+                <div><dt>Left with operators</dt><dd id="m-residual">$1.8T</dd></div>
+              </dl>
+              <p class="status" id="status">Coverage is partial. Raising the citizen share closes more of the gap than raising the tax, up to the profit this fleet actually earns.</p>
+              <div class="lens">
+                <label class="slider">
+                  <span class="slider-top"><span>Purchasing-power lens · cost decline</span><output id="defl-out" for="defl">0%</output></span>
+                  <input id="defl" name="defl" type="range" min="0" max="80" step="5" value="0" aria-label="Production cost decline" />
+                  <span class="slider-scale"><span>Nominal dollars</span><span>80% cheaper</span></span>
+                </label>
+                <div class="lens-presets" role="group" aria-label="Cost decline presets">
+                  <button type="button" data-defl="0" aria-pressed="true">Nominal</button>
+                  <button type="button" data-defl="50" aria-pressed="false">Costs −50%</button>
+                  <button type="button" data-defl="80" aria-pressed="false">Costs −80%</button>
+                </div>
+                <p class="figcap">Usable funding buys <strong id="m-real">$1,346 of today’s goods</strong>. At an 80% cost drop, one nominal dollar buys five of today’s.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec band" id="close">
+        <div class="sec-index" aria-hidden="true">08</div>
+        <div class="wrap reveal">
+          <p class="kicker">08 — The decision</p>
+          <h2>Build the claim <em>before the fleet arrives.</em></h2>
+          <div class="grid-2">
+            <div class="prose">
+              <p>
+                The robots are a capital program. The dividend is the decision to assign part of that capital to citizens as the machines deploy, rather than discovering afterward that the profit has an owner and the public has a tax.
+              </p>
+              <p>
+                Three to five thousand dollars a month is the design target. A profits tax is a companion. Ownership is the base. Wage insurance covers the decade in which the two labor forces change places. The ministry does not get the keys.
+              </p>
+            </div>
+            <form class="signup" id="briefing" action="https://formspree.io/f/REPLACE_ME" method="POST">
+              <h3>Get the next briefing</h3>
+              <p>A short note when the model is updated. Staging placeholder only.</p>
+              <label>
+                Email
+                <input type="email" name="email" required autocomplete="email" placeholder="you@domain.com" />
+              </label>
+              <input type="hidden" name="_subject" value="The Ownership Dividend — staging list" />
+              <button class="btn" type="submit">Send the briefing</button>
+              <p id="form-note" role="status"></p>
+              <p class="fine">Formspree form id: REPLACE_ME. Submissions are not delivered until that id is a real form.</p>
+            </form>
+          </div>
+          <p class="fine" style="margin-top: 2rem">
+            A concept site by Sean Knox. Not a bill, a fund, or an offer of securities. Figures are a planning case for a public conversation.
+            This staging build is marked noindex.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="wrap">
+        <span>The Ownership Dividend · Post-Work Economics</span>
+        <span>Sean Knox · <a href="#calculator">Calculator</a> · <a href="#math">Locked figures</a></span>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
